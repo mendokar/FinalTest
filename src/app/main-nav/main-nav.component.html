@@ -1,0 +1,21 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+     <div class="title">
+      <p ><strong>Domicilios Test</strong></p>
+     </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div style="padding: 20px;">
+      <app-domicilios-test></app-domicilios-test>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
